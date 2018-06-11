@@ -28,3 +28,9 @@ class File:
         """
         """
         return cls.openImage(image_path, cv2.COLOR_BGR2HSV)
+
+    @classmethod
+    def toGray(cls, opencvImage):
+        """
+        """
+        return cv2.cvtColor(opencvImage, cv2.COLOR_BGR2GRAY)
